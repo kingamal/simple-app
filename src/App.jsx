@@ -1,15 +1,44 @@
 import './App.css'
 import Header from './components/Header'
 import Counter from './components/Counter'
+import Home from './components/Home'
+import About from './components/About'
+import { Routes, Route } from 'react-router-dom'
+
 
 function App() {
 
   return (
     <>
-      <div className='main'>
-        <Header />
-        <Counter />
-      </div>
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <>
+              <Header />
+              <Home />
+            </>  
+          }
+        />
+        <Route
+          path='/counter'
+          element={
+            <>
+              <Header />
+              <Counter />
+            </>
+          }
+        />
+        <Route
+          path='/about'
+          element={
+            <>
+              <Header />
+              <About />
+            </>
+          }
+        />
+      </Routes >
     </>
   )
 }
