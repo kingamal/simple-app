@@ -50,3 +50,32 @@
   padding: 10px 40px;
   margin-top: 10px;
 }
+
+.calc {
+  width: 330px;
+  margin: 100px auto;
+}
+
+#answer {
+  background-color: #e3e3e3;
+  padding: 10px;
+  font-size: 35px;
+  width: 320px;
+  height: 45px;
+  text-align: right;
+  border: 3px solid #333;
+}
+
+.button {
+  background: #333;
+  height: 80px;
+  width: 80px;
+  color: white;
+  font-size: 30px;
+  border: 1px solid black;
+  float: left;
+}
+
+.button1 {
+  width: 160px;
+}
