@@ -16,8 +16,10 @@ function App() {
           path='/'
           element={
             <>
-              <Header />
-              <Home />
+              <div className='main'>
+                <Header />
+                <Home />
+              </div>
             </>  
           }
         />
@@ -25,8 +27,10 @@ function App() {
           path='/counter'
           element={
             <>
-              <Header />
-              <Counter />
+              <div className='main'>
+                <Header />
+                <Counter />
+              </div>
             </>
           }
         />
@@ -34,8 +38,10 @@ function App() {
           path='/about'
           element={
             <>
+            <div className='main'>
               <Header />
               <About />
+            </div>
             </>
           }
         />
@@ -43,8 +49,10 @@ function App() {
           path='/calculator'
           element={
             <>
-              <Header />
-              <Calculator />
+              <div className='main'>
+                <Header />
+                <Calculator />
+              </div>
             </>
           }
         />

@@ -22,12 +22,13 @@
   margin: 0 auto;
 }
 
-.main-header > ul > li {
+.main-header-li {
   outline: none;
   text-decoration: none;
   list-style: none;
   font-size: 20px;
   cursor: pointer;
+  color: black;
 }
 
 .counter-parent {

@@ -6,10 +6,10 @@ function Header() {
     return (
         <div className="main-header">
             <ul>
-                <Link to='/'><li>Home</li></Link>
-                <Link to='/counter'><li>Counter</li></Link>
-                <Link to='/about'><li>About</li></Link>
-                <Link to='/calculator'><li>Calculator</li></Link>
+                <Link to='/' className='main-header-li'>Home</Link>
+                <Link to='/counter' className='main-header-li'>Counter</Link>
+                <Link to='/about' className='main-header-li'>About</Link>
+                <Link to='/calculator' className='main-header-li'>Calculator</Link>
             </ul>
         </div>
     );
