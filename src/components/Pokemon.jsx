@@ -5,13 +5,15 @@ const Pokemon = () => {
     const [num, setNum] = useState();
     const [name, setName] = useState();
     const [moves, setMoves] = useState();
+    const [lengthMoves, setLengthMoves] = useState();
 
     useEffect(() => {
         async function getData() {
             const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);
             setName(res.data.name);
             console.log(res.data.moves)
-            setMoves(res.data.moves.length);
+            setMoves(res.data.moves);
+            setLengthMoves(res.data.moves.length);
         }
         getData();
     })
@@ -19,7 +21,12 @@ const Pokemon = () => {
         <>
             <h1>You choose <span style={{ color: 'gray' }}>{num}</span> value</h1>
             <h1>My name is <span style={{ color: 'gray' }}>{name}</span></h1>
-            <h1>I have <span style={{ color: 'gray' }}>{moves}</span> moves</h1>
+            <h1>I have <span style={{ color: 'gray' }}>{lengthMoves}</span> moves, such as:</h1>
+            <h2>
+                {moves?.map((move) => {
+                    return move.move.name;
+                })}
+            </h2>
             <select name="" id="" value={num} onChange={(event) => {
                 setNum(event.target.value);
             }}>
