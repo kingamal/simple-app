@@ -10,6 +10,7 @@ function Header() {
                 <Link to='/counter' className='main-header-li'>Counter</Link>
                 <Link to='/about' className='main-header-li'>About</Link>
                 <Link to='/calculator' className='main-header-li'>Calculator</Link>
+                <Link to='/pokemon' className='main-header-li'>Pokemon</Link>
             </ul>
         </div>
     );

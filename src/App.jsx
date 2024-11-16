@@ -5,6 +5,7 @@ import Home from './components/Home'
 import About from './components/About'
 import { Routes, Route } from 'react-router-dom'
 import Calculator from './components/Calculator'
+import Pokemon from './components/Pokemon'
 
 
 function App() {
@@ -52,6 +53,17 @@ function App() {
               <div className='main'>
                 <Header />
                 <Calculator />
+              </div>
+            </>
+          }
+        />
+        <Route
+          path='/pokemon'
+          element={
+            <>
+              <div className='main'>
+                <Header />
+                <Pokemon />
               </div>
             </>
           }
